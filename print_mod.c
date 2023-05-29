@@ -10,6 +10,6 @@ int print_mod(char *format, va_list args)
 {
 	(void)format;
 	(void)args;
-	_putchar('%');
+	putchar('%');
 	return (1);
 }
