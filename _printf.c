@@ -16,6 +16,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	int i = 0;
+	int doo;
 
 	va_start(args, format);
 
@@ -34,13 +35,6 @@ int _printf(const char *format, ...)
 				{'%', print_mod},
 				{'d', print_int},
 				{'i', print_int},
-				{'b', print_binary},
-				{'u', print_unsigned_int},
-				{'o', print_oct},
-				{'x', print_hex},
-				{'X', print_HEX},
-				{'R', print_rot13},
-				{'r', Print_rev}
 			};
 		}
 
