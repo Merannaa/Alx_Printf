@@ -30,19 +30,19 @@ int _printf(const char *format, ...)
 		if (p == '%')
 		{
 			format_t ops[] = {
-				{'c', print_char},
-				{'s', print_str},
-				{'%', print_mod},
-				{'d', print_int},
-				{'i', print_int},
+				{"%c", print_char},
+				{"%s", print_str},
+				{"%%", print_mod},
+				{"%d", print_int},
+				{"%i", print_int},
 			};
 		}
 
-		_putchar(p);
+		putchar(p);
 
 		i++;
+	}
 
 		va_end(args);
 		return (i);
 }
-
