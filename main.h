@@ -10,12 +10,12 @@
 /**
  * struct format - struct format
  *
- * @r: operator
+ * @format: operator
  * @a: function
  */
 typedef struct format
 {
-	char *r;
+	char *format;
 	int (*a)();
 
 } format_t;
