@@ -7,11 +7,17 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+ * struct format - struct format
+ *
+ * @r: operator
+ * @a: function
+ */
 typedef struct format
 {
-    char *r;
-    int (*a)();
-       
+	char *r;
+	int (*a)();
+
 } format_t;
 
 int _printf(const char *format, ...);
