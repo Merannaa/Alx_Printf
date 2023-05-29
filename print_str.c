@@ -19,7 +19,7 @@ int print_str(va_list args)
 
 	for (i = 0; p[i] != '\0'; i++)
 	{
-		_putchar(p[i]);
+		putchar(p[i]);
 	}
 
 	return (i);
