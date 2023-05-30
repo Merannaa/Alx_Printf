@@ -15,8 +15,16 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 
+	 format_t ops[] = {
+                                {"%c", print_char},
+                                {"%s", print_str},
+                                {"%%", print_mod},
+                                {"%d", print_int},
+                                {"%i", print_int},
+                        };
+
 	int i = 0;
-	int doo;
+	int j = 0;
 
 	va_start(args, format);
 
@@ -29,13 +37,16 @@ int _printf(const char *format, ...)
 
 		if (p == '%')
 		{
-			format_t ops[] = {
-				{"%c", print_char},
-				{"%s", print_str},
-				{"%%", print_mod},
-				{"%d", print_int},
-				{"%i", print_int},
-			};
+			char z = format[i + 1];
+			z =  malloc()
+
+
+			for (j = 0; j < 5; j++)
+			{
+				if (x == ops[j].format)
+				       ops[j].a(args);	
+			}
+
 		}
 
 		putchar(p);
